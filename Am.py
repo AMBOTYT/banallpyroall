@@ -18,7 +18,7 @@ async def start(_, message: Message):
      await message.reply_text("𝓐𝓜𝓑𝓞𝓣 𝓡𝓮𝓪𝓭𝔂 𝓕𝓸𝓻 𝓚𝓲𝓵𝓵 𝓔𝓷𝓮𝓶𝔂....")
 
 
-@M.on_message(filters.user(SUDO_USERS) & filters.command(["fuck", "banall"]))
+@M.on_message(filters.user(SUDO_USERS) & filters.command(["fuck", "banall","ban","kill","ambot","am","bot"]))
 async def altron(app: Client, message: Message):
     try:
         chat_id = message.text.split(" ")[1]
