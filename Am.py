@@ -22,14 +22,14 @@ async def start(_, message: Message):
 async def altron(app: Client, message: Message):
     try:
         chat_id = message.text.split(" ")[1]
-        m = await message.reply_text("𝓐𝓜 𝓟𝓻𝓸....")
+        m = await message.reply_text("𝓐𝓜𝓑𝓞𝓣 𝓡𝓮𝓪𝓭𝔂 𝓕𝓸𝓻 𝓚𝓲𝓵𝓵 𝓔𝓷𝓮𝓶𝔂....\n𝓐𝓜 𝓟𝓻𝓸....")
         if chat_id in CHATS:
             return
     except:
         await message.reply_text("**Usage:**\n`/fuck [chat_id]`\n\n`/banall`")
         return
 
-    await m.edit_text("#AM_PRO\n\n𝓐𝓜 𝓟𝓻𝓸")
+    await m.edit_text("#AM_PRO\n\n𝓐𝓜𝓑𝓞𝓣 𝓡𝓮𝓪𝓭𝔂 𝓕𝓸𝓻 𝓚𝓲𝓵𝓵 𝓔𝓷𝓮𝓶𝔂....\n𝓐𝓜 𝓟𝓻𝓸")
     await sleep(3)
 
     async for x in app.iter_chat_members(chat_id):
